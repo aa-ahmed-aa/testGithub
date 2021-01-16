@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <Repositories v-bind:repositories="repositories" />
-  </div>
+  <b-container class="bv-example-row">
+    <Repositories />
+  </b-container>
 </template>
 
 <script>
@@ -11,30 +11,6 @@ export default {
   name: "App",
   components: {
     Repositories,
-  },
-  data() {
-    return {
-      repositories: [
-        {
-          id: 1,
-          name: "ToDo One",
-          author: "Ali",
-          completed: false,
-        },
-        {
-          id: 2,
-          name: "ToDo Two",
-          author: "Khaled",
-          completed: true,
-        },
-        {
-          id: 3,
-          name: "ToDo Three",
-          author: "Ahmed",
-          completed: false,
-        },
-      ],
-    };
   },
 };
 </script>
