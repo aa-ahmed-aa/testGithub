@@ -13,6 +13,7 @@ To run the tests
 $ docker ps
 $ docker exec <docker_image_sha> npm run test
 ```
+VISIT `http://localhost:3050`
 
 ## Backend
 - [x] using typescript for the backend.
