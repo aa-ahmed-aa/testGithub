@@ -1,5 +1,5 @@
-# testGithub
-sends API request to Github API to fetch repositories based on filter parameters
+# Github Trending
+Sends API request to Github API to fetch repositories based on filter parameters
 
 ## Installation
 To run the app
@@ -23,4 +23,8 @@ $ docker exec <docker_image_sha> npm run test
 - [x] Styling with bootstrap
 
 ## Nginx
-- using nginx as a reverse proxy and hide the backend behind `/backend` endpoint.
+- using nginx as a reverse proxy 
+
+#### Paths 
+    `/backend` backend service.
+    `/` frontend service
