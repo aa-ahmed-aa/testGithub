@@ -7,7 +7,7 @@ const router = express.Router();
 
 const GITHUB_API_URL = process.env.GITHUB_API_URL || 'https://api.github.com/search/repositories';
 
-router.get('/repository', validateRequest,
+router.get('/backend/repository', validateRequest,
     async (req: Request, res: Response) => {
 
         const repoName = req.query.q;

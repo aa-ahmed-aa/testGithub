@@ -89,7 +89,7 @@ export default {
         this.loading = true;
         axios
           .get(
-            `http://localhost:3000/repository?q=${this.filters.repoName}&sortType=${this.filters.sortType}&order=${this.filters.orderType}&page=${this.filters.page}&limit=${this.filters.itemsPerPage}`
+            `/backend/repository?q=${this.filters.repoName}&sortType=${this.filters.sortType}&order=${this.filters.orderType}&page=${this.filters.page}&limit=${this.filters.itemsPerPage}`
           )
           .then(
             (response) => (
