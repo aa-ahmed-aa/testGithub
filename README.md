@@ -27,5 +27,5 @@ VISIT `http://localhost:3050`
 - using nginx as a reverse proxy 
 
 #### Paths 
-    `/backend` backend service.
-    `/` frontend service
+`/backend` backend service.  
+`/` frontend service
