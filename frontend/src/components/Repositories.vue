@@ -47,7 +47,7 @@
         </div>
       </b-col>
     </b-row>
-    {{ filters }}
+
     <!-- List Repos -->
     <div v-bind:key="repo.id" v-for="repo in repositories">
       <repo-card v-bind:repo="repo" />
