@@ -9,8 +9,9 @@ $ docker-compose up --build
 
 To run the tests
 ```bash
-$ docker ps => AND SAVE <BACKEND_IMAGE_SHA> 
-$ docker exec <BACKEND_IMAGE_SHA> npm run test
+//get the docker image sha
+$ docker ps
+$ docker exec <docker_image_sha> npm run test
 ```
 
 ## Backend
