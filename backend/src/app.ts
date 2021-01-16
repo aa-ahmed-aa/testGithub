@@ -4,10 +4,12 @@ import { json } from 'body-parser';
 import { errorHandler } from './middleware/error-handler';
 import { NotFoundError } from './errors/not-found-error';
 import { githubSearchRouter } from './routes/github-search';
+import cors from 'cors';
 
 const app = express();
 app.set('trust proxy', true);
 app.use(json());
+app.use(cors());
 
 app.use(githubSearchRouter);
 
